@@ -1,0 +1,8 @@
+{
+ "walletAddr": "127.0.0.1:222",
+ "nodeos": "127.0.0.1:8888",
+ "wallet_data_dir": "wallet",
+
+ "wallet_test_name": "testwallet",
+ "test": "1"
+}
