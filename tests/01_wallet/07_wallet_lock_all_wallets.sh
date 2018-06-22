@@ -40,7 +40,7 @@ if [[ $ERR != "" ]]; then
 else
     DATA=$($GLOBALPATH/bin/cleos.sh wallet keys 2>$tpm_stderr)
     ERR=$(cat $tpm_stderr)
-    if [[ $ERR = *"any unlocked wallet"* ]]; then
+    if [[ $ERR = *"Error 3120003: Locked wallet"* ]]; then
         echo "1:$TEST_NAME"
     else
         failed "There is still open wallet";
